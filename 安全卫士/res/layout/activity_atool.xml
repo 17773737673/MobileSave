@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e74c3c"
+    android:orientation="vertical" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="高级工具" />
+
+    <TextView
+        android:id="@+id/tv_searchs"  
+        style="@style/atools"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:layout_margin="5dp"
+        android:text="归属地查询" />
+    <TextView
+        android:id="@+id/tv_sms_safe"  
+        style="@style/atools"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:layout_margin="5dp"
+        android:text="短信备份" />
+
+</LinearLayout>

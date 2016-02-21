@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/call_locate_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_additem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/atoolclick"
+        android:clickable="true"
+        android:drawableRight="@drawable/address__style"
+        android:padding="5dp"
+        android:text="添加名单"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/atoolclick"
+        android:clickable="true"
+        android:drawableRight="@drawable/address__style"
+        android:padding="5dp"
+        android:text="走你二货"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+</LinearLayout>

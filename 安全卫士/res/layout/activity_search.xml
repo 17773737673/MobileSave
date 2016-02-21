@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e74c3c"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+         example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="归属地查询" />
+
+    
+
+    <EditText
+        android:id="@+id/et_search_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:hint="请输入电话号码"
+        android:inputType="number"
+        android:lines="2"
+        android:padding="10dp" >
+    </EditText>
+<TextView
+        android:id="@+id/show_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_search_number"
+        android:layout_centerHorizontal="true"
+        android:text="查询结果"  
+        android:textColor="@color/wirte"
+        android:textSize="20sp" />
+</RelativeLayout>

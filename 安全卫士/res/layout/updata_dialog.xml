@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="修改拦截模式" />
+
+    <TextView
+        android:id="@+id/et_add_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        
+        android:gravity="center_horizontal"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_phone_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="电话拦截" />
+
+        <CheckBox
+            android:id="@+id/cb_sms_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="短信拦截" />
+    </RelativeLayout>
+
+</LinearLayout>

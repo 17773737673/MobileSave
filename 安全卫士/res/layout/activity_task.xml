@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#e74c3c"
+    android:orientation="vertical" >
+	
+     <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="进程管理" />
+     
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <TextView 
+             android:id="@+id/tv_task_count"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="进程数"
+             />
+         <TextView 
+             android:id="@+id/tv_task_memory"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="内存占用"
+             android:layout_weight="1"
+             />
+     </LinearLayout>
+     <FrameLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         >
+         
+     <include layout="@layout/listview"
+         android:id="@+id/lv_task_list"
+         />
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_gravity="bottom"
+         >
+          <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="全选"
+         android:layout_weight="1"
+         android:onClick="selectAll"
+         />
+         <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="反选"
+         android:layout_weight="1"
+         android:onClick="selectOppsite"
+         />
+           <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="清理"
+         android:layout_weight="1"
+         android:onClick="killProcess"
+         />
+           <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="设置"
+         android:layout_weight="1"
+         android:onClick="openSetting"
+         />
+     </LinearLayout> 
+     
+     </FrameLayout>
+</LinearLayout>

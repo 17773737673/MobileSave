@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="添加黑名单" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <EditText
+            android:id="@+id/et_add_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_selector"
+            android:hint="输入黑名单"
+			android:layout_weight="1"
+            android:inputType="number"
+            android:padding="5dp" />
+        <Button 
+            android:id="@+id/bu_sys_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/wirte"
+            android:background="@drawable/btn_selector"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:text="联系人"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_phone_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="电话拦截" />
+
+        <CheckBox
+            android:id="@+id/cb_sms_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="短信拦截" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/img_frame_background"
+    android:orientation="vertical" >
+
+    <com.example.reviewmobile.view.SlidingMenu
+        android:id="@+id/sm_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        example:rightpadding="80"
+        android:scrollbars="none"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/activtiy_menu" 
+                android:id="@+id/menu"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e74c3c"
+                android:orientation="vertical"
+                 >
+
+                <!-- 设置标题行 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+               
+
+                <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+                    example:reflectionColor="@color/black"
+                    style="@style/title"
+                    android:text="功能列表" />
+                <Button 
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="openMenu"
+                    />
+
+                <!-- 跑马灯效果 -->
+ </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/di"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:text="二狗牌安全卫士，你值得拥有，自从有了手机安全卫士，感觉要迎娶白富美，出任CEO，走上人生颠覆了"
+                    android:textSize="18sp" />
+                <!-- 设置行数与行间距 -->
+
+                <GridView
+                    android:id="@+id/gd_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:verticalSpacing="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.reviewmobile.view.SlidingMenu>
+
+</RelativeLayout>

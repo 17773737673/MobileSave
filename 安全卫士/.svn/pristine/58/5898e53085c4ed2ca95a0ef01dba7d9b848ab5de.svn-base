@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="设置密码" />
+
+    <EditText
+        android:id="@+id/et_pw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:inputType="number"
+        android:password="true"
+        android:background="@drawable/edittext_selector"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/et_pws1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/edittext_selector"
+        android:gravity="center_vertical"
+        android:hint="请再次确认密码"
+        android:inputType="number"
+        android:password="true"
+        android:lines="1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

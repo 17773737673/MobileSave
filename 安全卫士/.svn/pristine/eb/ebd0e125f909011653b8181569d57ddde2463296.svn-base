@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e74c3c"
+    android:orientation="vertical" >
+    
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="即将开发，敬请期待"
+    android:gravity="center"
+    android:textSize="22sp"
+    android:textColor="@color/wirte"
+    />
+</LinearLayout>

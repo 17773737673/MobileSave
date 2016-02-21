@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wirte"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+     <ImageView
+        android:id="@+id/iv_processes_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tv_processes_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="安全卫士 " />
+
+        <TextView
+            android:id="@+id/tv_processes_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="占用内存12.4M" />
+
+        <CheckBox
+            android:id="@+id/cb_clean_processes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:layout_marginTop="5dp"
+       android:background="@color/black"
+       />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.example.reviewmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e74c3c"
+    android:orientation="vertical" >
+
+    <com.sdf.jazzylistviewdemo.romainpiel.shimmer.ShimmerTextView
+        example:reflectionColor="@color/black"
+        style="@style/title"
+        android:text="3.设置安全号码" />
+
+    <TextView
+        style="@style/item"
+        android:text="Sim卡变更后" />
+
+    <TextView
+        style="@style/item"
+        android:text="报警短信回发送给安全号码" />
+
+    <EditText
+        android:id="@+id/et_phone"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+        android:hint="请输入联系人" />
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="选择联系人"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_style"
+        android:onClick="contact"
+        />
+
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            style="@style/next"
+             />
+		<Button
+            style="@style/previous"
+             />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setup3" />
+
+    </RelativeLayout>
+
+</LinearLayout>
